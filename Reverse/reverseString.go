@@ -14,10 +14,18 @@ func main() {
 //	return res
 //}
 
+//func reverse(word string) string {
+//	var res string
+//	for i := 0; i < len(word); i++ {
+//		res = string(word[i]) + res
+//	}
+//	return res
+//}
+
 func reverse(word string) string {
 	var res string
-	for i := 0; i < len(word); i++ {
-		res = string(word[i]) + res
+	for _, r := range word {
+		res = string(r) + res
 	}
 	return res
 }
